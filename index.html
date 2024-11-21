@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vapes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            flex: 1;
+            padding: 20px;
+            gap: 20px;
+        }
+        .left-section {
+            flex: 1;
+            padding: 20px;
+            border-right: 1px solid #ddd;
+        }
+        .right-section {
+            flex: 2;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        .product {
+            text-align: center;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto;
+        }
+
+        /* Estilo adaptable */
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column; /* Elementos apilados en dispositivos pequeños */
+            }
+            .left-section, .right-section {
+                flex: 1 1 100%; /* Ambas secciones ocupan el ancho completo */
+                border-right: none; /* Elimina la línea divisoria */
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CompiVapes</h1>
+    </header>
+    <nav>
+        <section id="indice">
+            <a href="#ofertas">ofertas</a>
+            <a href="#iplay max">iplay max</a>
+            <a href="#vhill 3k">vhill 3k</a>
+        </section>
+    </nav>
+    <main>
+        <div class="left-section">
+            <section id="ofertas">
+                <h1><center>OFERTAS</center></h1>
+                <center>
+                    <img src="of1.png" alt="inicio" width="550" height="400">
+                    <img src="of2.png" alt="inicio" width="550" height="400">
+                </center>
+                <a href="#indice">indice</a>
+            </section>
+        </div>
+    </main>
+    <main>
+        <div class="left-section">
+            <h2>Sabores</h2>
+            <table>
+                <tr>
+                    <th>Sabor</th>
+                </tr>
+                <tr>
+                    <td>Chocolate</td>
+                </tr>
+                <tr>
+                    <td>Vainilla</td>
+                </tr>
+                <tr>
+                    <td>Fresa</td>
+                </tr>
+            </table>
+        </div>
+        <div class="right-section">
+            <section id="iplay max">
+                <h2>Iplay Max</h2>
+                <div class="product">
+                    <img src="max.png" alt="Producto">
+                    <p>Precio: $250.00</p>
+                    <a href="#indice">indice</a>
+                </div>
+            </section>
+        </div>
+    </main>
+    <main>
+        <div class="left-section">
+            <h2>Sabores</h2>
+            <table>
+                <tr>
+                    <th>Sabor</th>
+                </tr>
+                <tr>
+                    <td>Chocolate</td>
+                </tr>
+                <tr>
+                    <td>Vainilla</td>
+                </tr>
+                <tr>
+                    <td>Fresa</td>
+                </tr>
+            </table>
+        </div>
+        <div class="right-section">
+            <section id="vhill 3k">
+                <h2>Vhill 3000</h2>
+                <div class="product">
+                    <img src="v3.png" alt="Producto">
+                    <p>Precio: $250.00</p>
+                    <a href="#indice">indice</a>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sitio Web de Sabores</p>
+    </footer>
+</body>
+</html>
